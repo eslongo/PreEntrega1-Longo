@@ -1,0 +1,67 @@
+/* NavBar.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+.navbar .logo a {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+
+.navbar .logo a:hover {
+  color: orange;
+}
+
+.navbar .categories {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar .categories li {
+  margin-right: 20px;
+}
+
+.navbar .categories li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.navbar .categories li a:hover {
+  color: #ddd;
+}
+
+/* Contenedor del carrito */
+.cart-container {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centra el contenido dentro del contenedor */
+}
+
+.cart-count {
+  margin-left: 8px;
+  font-size: 1.2rem;
+  background-color: red;
+  color: white;
+  padding: 3px 8px;
+  border-radius: 50%;
+}
+
+.cart-icon {
+  font-size: 1.6rem;
+}
