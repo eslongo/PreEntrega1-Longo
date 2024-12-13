@@ -1,14 +1,13 @@
-/* ItemListContainer.css */
 .item-list-container {
   display: flex;
-  justify-content: center; /* Centra el contenido horizontalmente */
-  align-items: center; /* Centra el contenido verticalmente */
-  height: 100vh; /* Asegura que el contenedor ocupe toda la altura de la pantalla */
-  margin: 0; /* Elimina márgenes para que el contenedor ocupe toda la pantalla */
+  justify-content: center; 
+  align-items: center;
+  height: 100vh; 
+  margin: 0; 
 }
 
 .item-list-container h2 {
-  font-size: 3rem; /* Ajusta el tamaño del texto */
-  color: #333; /* Color del texto */
-  text-align: center; /* Asegura que el texto esté centrado */
+  font-size: 3rem;
+  color: #333; 
+  text-align: center; 
 }

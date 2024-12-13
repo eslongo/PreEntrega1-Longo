@@ -1,4 +1,3 @@
-// ItemListContainer.jsx
 import React from 'react';
 import './ItemListContainer.css';
 

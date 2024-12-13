@@ -1,4 +1,3 @@
-/* NavBar.css */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -46,11 +45,10 @@
   color: #ddd;
 }
 
-/* Contenedor del carrito */
 .cart-container {
   display: flex;
   align-items: center;
-  justify-content: center; /* Centra el contenido dentro del contenedor */
+  justify-content: center;
 }
 
 .cart-count {

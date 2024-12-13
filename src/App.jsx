@@ -1,18 +1,15 @@
-// App.js
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import NavBar from './components/NavBar';  // Asegúrate de que la ruta es correcta
+import NavBar from './components/NavBar';
 import ItemListContainer from './components/ItemListContainer';
-
 function App() {
-  const [cartItems, setCartItems] = useState(0);  // Estado para los productos en el carrito
+  const [cartItems, setCartItems] = useState(0);
 
   return (
     <Router>
-      <NavBar cartItems={cartItems} /> {/* Pasamos la cantidad al Navbar */}
+      <NavBar cartItems={cartItems} />
       <Routes>
         <Route path="/" element={<ItemListContainer greeting="Welcome to our store!" />} />
-        {/* Aquí podrías agregar más rutas si lo necesitas */}
       </Routes>
     </Router>
   );
