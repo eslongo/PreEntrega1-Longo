@@ -10,9 +10,9 @@ const NavBar = ({ cartItems }) => {
       </div>
 
       <ul className="categories">
-        <li><Link to="/category1">Components</Link></li>
-        <li><Link to="/category2">Peripherals</Link></li>
-        <li><Link to="/category3">Ornaments</Link></li>
+        <li><Link to="/category/components">Components</Link></li>
+        <li><Link to="/category/peripherals">Peripherals</Link></li>
+        <li><Link to="/category/ornaments">Ornaments</Link></li>
       </ul>
 
       <div className="cart-container">

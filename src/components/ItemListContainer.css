@@ -11,3 +11,17 @@
   color: #333; 
   text-align: center; 
 }
+
+.product-item {
+  text-align: center;
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.product-image {
+  width: 200px;  /* Tamaño adecuado para las imágenes */
+  height: auto;
+  margin-bottom: 10px;
+}
