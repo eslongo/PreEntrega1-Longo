@@ -1,17 +1,15 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import './ItemListContainer.css';
 
 const ItemListContainer = ({ greeting }) => {
-  const { categoryId } = useParams(); // Usamos useParams para obtener el id de la categoría
+  const { categoryId } = useParams();
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    // Aquí va la lógica para obtener los productos, usando el categoryId si está presente
     const fetchProducts = async () => {
-      let productsData = []; // Aquí debes hacer la llamada a la API o mock
+      let productsData = [];
 
-      // Simulamos productos para cada categoría (esto sería lo que devuelves de tu API)
       if (categoryId === 'components') {
         productsData = [
           { id: 1, name: 'Keyboard', description: 'Mechanical keyboard', price: '$50', image: 'TECLADO.png' },
@@ -35,14 +33,13 @@ const ItemListContainer = ({ greeting }) => {
     <div className="item-list-container">
       <h2>{greeting}</h2>
       <div className="product-list">
-        {products.map(product => (
+        {products.map((product) => (
           <div key={product.id} className="product-item">
             <h3>{product.name}</h3>
             <p>{product.description}</p>
             <p>{product.price}</p>
-            {/* Asegúrate de que la ruta de la imagen sea correcta */}
             <img src={`/assets/${product.image}`} alt={product.name} className="product-image" />
-            <a href={`/item/${product.id}`}>Ver detalles</a>
+            <Link to={`/item/${product.id}`}>Ver detalles</Link>
           </div>
         ))}
       </div>
